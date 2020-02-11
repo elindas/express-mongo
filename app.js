@@ -20,6 +20,10 @@ app.use(express.static(path.join(__dirname, "assets")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/todos", require("./routes/todos"));
+app.use("/students", require("./routes/students"));
+
 app.use("/assets", express.static("assets"));
+
+
 
 module.exports = app;
