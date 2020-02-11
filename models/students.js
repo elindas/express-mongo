@@ -18,6 +18,10 @@ const studentsSchema = new Schema({
     score:{
         type: String,
         required: false
+    },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: "users"
     }
     
 });
